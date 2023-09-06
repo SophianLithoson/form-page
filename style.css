@@ -1,5 +1,39 @@
+body {
+    display: flex;
+    font-family: Georgia, "Times New Roman", Times, serif
+}
+
+a:link, a:visited {
+    color: inherit;
+
+}
+
 .sidebar {
-    background-color: aquamarine;
+    background: url("./sidebar_beach.jpg");
+    background-size: 716.2px 1074.4px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar-logo {
+    font-family: "Seaweed Script", cursive;
+    font-size: 48px;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.596);
+    margin: 50px 0 0;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-footer {
+    margin: auto 0 0;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.596);
+    display: flex;
+    justify-content: center;
 }
 
 .main-container {
