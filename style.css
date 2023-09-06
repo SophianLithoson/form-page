@@ -55,6 +55,8 @@ a:link, a:visited {
 
 .form-section {
     background-color: whitesmoke;
+    box-sizing: border-box;
+    margin-right: 5px;
     box-shadow: 5px 5px 2px grey;
     max-width: 450px;
 }
@@ -73,4 +75,21 @@ a:link, a:visited {
 
 label {
     font-size: 0.6em;
+}
+
+.submit-section {
+    padding-top: 30px;
+}
+
+.submit-section button {
+    background-color: brown;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.submit-section a {
+    color: brown;
 }
