@@ -3,6 +3,10 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif
 }
 
+label, input {
+    display:block;
+}
+
 a:link, a:visited {
     color: inherit;
     text-decoration: none;
@@ -11,7 +15,8 @@ a:link, a:visited {
 .sidebar {
     background: url("./sidebar_beach.jpg");
     background-size: 716.2px 1074.4px;
-    width: 400px;
+    width: 500px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -40,7 +45,32 @@ a:link, a:visited {
     background-color: antiquewhite;
 }
 
+.main-header, .form-section, .submit-section {
+    padding: 8px;
+}
+
+.main-header {
+    padding-top: 40px;
+}
+
 .form-section {
     background-color: whitesmoke;
-    border-style: 1px solid black;
+    box-shadow: 5px 5px 2px grey;
+    max-width: 450px;
+}
+
+.form-section p {
+    font-weight: bold;
+    font-size: large;
+}
+
+.form-section form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 0.6em;
 }
