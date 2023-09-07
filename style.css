@@ -84,14 +84,16 @@ label {
 
 input {
     border-color: #E5E7EB;
+    border-radius: 3px;
 }
 
 input:focus, input:active {
+    outline: none;
     border-color: blue;
     box-shadow: 2px 2px 2px grey;
 }
 
-input:invalid {
+input:invalid:not(:focus) {
     border-color: red;
 }
 
