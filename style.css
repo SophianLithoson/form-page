@@ -1,10 +1,6 @@
 body {
     display: flex;
-    font-family: Georgia, "Times New Roman", Times, serif
-}
-
-label, input {
-    display:block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 a:link, a:visited {
@@ -59,22 +55,44 @@ a:link, a:visited {
     margin-right: 5px;
     box-shadow: 5px 5px 2px grey;
     max-width: 450px;
-}
-
-.form-section p {
-    font-weight: bold;
-    font-size: large;
-}
-
-.form-section form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.form-title {
+    font-weight: bold;
+    font-size: large;
+    width: 100%;
+}
+
+label, input {
+    display:block;
+}
+
 label {
     font-size: 0.6em;
+    margin-top: 1em;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:focus, input:active {
+    border-color: blue;
+    box-shadow: 2px 2px 2px grey;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.password-error-text {
+    color: red;
+    font-size: 0.6em;
+    min-height: 0.6em;
 }
 
 .submit-section {
@@ -88,6 +106,7 @@ label {
     padding: 4px 16px;
     border: none;
     border-radius: 4px;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .submit-section a {

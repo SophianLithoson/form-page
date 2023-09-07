@@ -20,9 +20,10 @@
                 beaches, perfect weather, and even more perfect mead...</p>
             <p>Welcome... to Alfheim!</p>            
         </div>
+        <form action="" method="post">
         <div class="form-section">
-            <p>Register now!</p>
-            <form action="" method="post">
+            <p class="form-title">Register now!</p>
+            
                     <div>
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name" name="first-name"/>
@@ -37,22 +38,25 @@
                     </div>
                     <div>
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" id="phone-number" name="phone-number"/>
+                        <input type="text" id="phone-number" name="phone-number" pattern="\d{3}[.\-]?\d{3}[.\-]?\d{4}"/>
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
                         <input type="password" id="password" name="password"/>
+                        <p class="password-error-text"></p>
                     </div>
                     <div>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
                         <input type="password" id="confirm-password" name="confirm-password"/>
                     </div>
-            </form>
+            
         </div>
+        
         <div class="submit-section">
-            <button type="button">Create Account</button>
+            <button type="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
+        </form>
     </div>
     
 </body>
