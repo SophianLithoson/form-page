@@ -9,13 +9,13 @@ body {
 
 a:link, a:visited {
     color: inherit;
-    text-decoration: no-repeat;
+    text-decoration: none;
 }
 
 .sidebar {
     background: url("./sidebar_beach.jpg");
     background-size: 716.2px 1074.4px;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-color: antiquewhite;
     width: 500px;
     min-width: 400px;
